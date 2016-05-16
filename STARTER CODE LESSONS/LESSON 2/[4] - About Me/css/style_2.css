@@ -1,0 +1,95 @@
+html, body{
+  margin:0; 
+  padding:0;
+}
+
+header {
+	margin:0 0 30px 0;
+  padding: 0px 0px 0px 50px ;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	background-color: #F8F8F8;
+	line-height: 22px;
+	padding: 50px 20px 50px 30px ;
+}
+
+h1 {
+	color: #2A303A;
+	font-family: 'Montserrat';
+	font-size: 37px;
+	text-transform: uppercase;
+}
+
+h2 {
+	font-size: 25px;
+	font-family: 'Roboto';
+	color: #2A303A;
+	margin-top: 2px;
+	font-weight: 100;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.gray {
+	color: #9C9C9F;
+	font-size: 15px;
+}
+
+.container {
+	padding: 50px;
+
+}
+
+.ed_l, .ed_r, .ex_l, .ex_r, .sk_l, .sk_r, .ac_l {
+	width: 45%;
+	float: left;
+	margin-right: 30px;
+	margin-top: 30px;
+}
+
+.ac_r {
+	width: 45%;
+	float: left;
+	margin-top: 30px;
+	margin-bottom: 200px;
+}
+
+hr {
+ float: left;
+}
+
+nav {
+	margin-right: 10px;
+	margin-top: 10px;
+	font-size: 12px;
+	float: right;
+}
+
+a {
+	color: #27CCC0;
+	text-decoration: none;
+}
+
+img {
+	width: 100%;
+	height: auto;
+}
+
+footer {
+	font-family: 'Roboto', sans-serif;
+	color: #F8F8F8;
+	font-size: 10px;
+	text-transform: uppercase;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 30px;
+  text-align: right;
+	background-color: #2A303A;
+}
+
