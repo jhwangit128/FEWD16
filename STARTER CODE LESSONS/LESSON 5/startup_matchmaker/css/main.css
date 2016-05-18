@@ -1,0 +1,135 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-image: url("../images/coworking.jpg");
+	margin: 0px;
+	padding: 0;
+	height: 100%;
+}
+
+.clearfix:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+header {
+	float: top;
+	color: white;
+	background-color: #3C3A3A;
+	clear: both;
+	display: block;
+	border-bottom: 5px solid #FEDB0D;
+	margin-top: 0;
+}
+
+h1 {
+	margin-left: 30px;
+	margin-right: 300px;
+	font-size: 30px;
+	font-family: Merriweather;
+	float: left;
+}
+
+nav li {
+	font-size: 20px;
+	font-family: Source Sans Pro;
+	font-weight: 400;
+	list-style: none;
+	float: left;
+	line-height: 80px;
+	margin-right: 40px;
+
+}
+
+.upper {
+	font-family: Oswald;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.twoheads {
+	font-size: 25px;
+	font-family: Merriweather;
+	font-weight: 700;
+	font-style: italic;
+	background-color: #D4E1DB;
+	text-align: center;
+	padding: 20px 0px 20px 0px;
+	margin-top: 0;
+	margin-bottom: 500px;
+}
+
+.imageshow {
+	max-height: 500px;
+	overflow:hidden;
+}
+
+section {
+margin: 0;
+padding-left: 0px;
+padding-right: 50px;
+background-color: white;
+
+
+}
+section div {
+	float: left;
+	width: 30%;
+	margin: 0;
+	padding-left: 40px;
+	background-color: white;
+}
+
+section div h2 {
+	font-size: 25px;
+	font-family: Merriweather;
+}
+
+section div p {
+	font-size:20px;
+	font-family: Source Sans Pro;
+	font-weight: 400;
+	margin-bottom: 30px;
+}
+
+.vl {
+	border-right: 1px solid #D4E1DB;
+	background-color: white;
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+button {
+	font-size: 20px;
+	font-family: Oswald;
+	text-transform: uppercase;
+	background-color: #D4E1DB;
+	border-radius: 6px;
+	width: 340px;
+	height: 55px;
+	border: 0px;
+	border-bottom: 3px solid #B4BBB7;
+}
+
+footer {
+	display: block;
+	clear: both;
+	background-color: #3C3A3A;
+	height: 75px;
+}
+
+footer p {
+	font-size: 20px;
+	font-family: Source Sans Pro;
+	font-weight: 400;
+	color: white;
+	line-height: 75px;
+	margin-left: 30px;
+}
+
+
+
+
