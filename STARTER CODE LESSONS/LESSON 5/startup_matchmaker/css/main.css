@@ -7,6 +7,7 @@ body {
 	margin: 0px;
 	padding: 0;
 	height: 100%;
+	position: relative;
 }
 
 .clearfix:after {
@@ -60,32 +61,80 @@ nav li {
 	padding: 20px 0px 20px 0px;
 	margin-top: 0;
 	margin-bottom: 500px;
+	border-bottom: 1px solid #3C3A3A;
+	box-shadow: 0px 0px 2px #2A303A;
 }
 
-.imageshow {
+/*.imageshow {
 	max-height: 500px;
 	overflow:hidden;
+}*/
+
+.floating_text {
+	background-color: white;
+	opacity: 0.8;
+	margin-left: 770px;
+	padding: 30px;
+	width: 38%;
+	z-index: 2;
+	top: 245px;
+	position: absolute;
+	float: right;
+	border: 2px solid #D4E1DB;
+	box-shadow: 1px 1px 1px 1px #A3A3A3;
+	border-radius: 3px;
+}
+
+.floating_text h2 {
+	color: #080808;
+	font-size: 25px;
+	font-family: Source Sans Pro;
+	font-weight: 700;
+}
+
+.floating_text p {
+	color: #080808;
+	font-size: 20px;
+	font-family: Source Sans Pro;
+	font-weight: 400;
+	line-height: 30px;
+	margin-bottom: 30px;
+}
+
+.red_button {
+	color: white;
+	font-size: 20px;
+	font-family: Oswald;
+	text-transform: uppercase;
+	background-color: #FF0121;
+	border-bottom: 4px solid #CE3237;
+	width: 390px;
 }
 
 section {
 margin: 0;
-padding-left: 0px;
-padding-right: 50px;
 background-color: white;
-
+padding-top: 30px;
+padding-bottom: 20px;
+margin-bottom: 0;
+box-shadow: 0 0 3px 0 #2A303A;
 
 }
 section div {
 	float: left;
-	width: 30%;
-	margin: 0;
+	width: 33%;
 	padding-left: 40px;
-	background-color: white;
+	padding-bottom: 30px;
+}
+
+.vl {
+	border-right: 1px solid #D4E1DB;
 }
 
 section div h2 {
 	font-size: 25px;
 	font-family: Merriweather;
+	margin-bottom: 4px;
 }
 
 section div p {
@@ -93,13 +142,9 @@ section div p {
 	font-family: Source Sans Pro;
 	font-weight: 400;
 	margin-bottom: 30px;
-}
-
-.vl {
-	border-right: 1px solid #D4E1DB;
-	background-color: white;
-	padding-left: 40px;
-	padding-right: 40px;
+	margin-top: 0;
+	line-height: 30px;
+	width: 90%;
 }
 
 button {
@@ -119,6 +164,7 @@ footer {
 	clear: both;
 	background-color: #3C3A3A;
 	height: 75px;
+	margin-top: 0;
 }
 
 footer p {
@@ -128,6 +174,7 @@ footer p {
 	color: white;
 	line-height: 75px;
 	margin-left: 30px;
+	margin-top: 0;
 }
 
 
