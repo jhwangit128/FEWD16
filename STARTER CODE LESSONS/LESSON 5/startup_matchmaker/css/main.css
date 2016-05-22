@@ -1,13 +1,14 @@
 * {
 	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
-body {
+.index {
 	background-image: url("../images/coworking.jpg");
-	margin: 0px;
-	padding: 0;
-	height: 100%;
-	position: relative;
+	box-shadow: inset 0px 0px 5px 1px #666666;
+	background-position: 50% -55px;
+	background-repeat: no-repeat;
 }
 
 .clearfix:after {
@@ -17,20 +18,22 @@ body {
 }
 
 header {
-	float: top;
 	color: white;
 	background-color: #3C3A3A;
 	clear: both;
 	display: block;
 	border-bottom: 5px solid #FEDB0D;
-	margin-top: 0;
+	height: 75px;
 }
 
-h1 {
+h1 a {
 	margin-left: 30px;
+	margin-top: 20px;
 	margin-right: 300px;
 	font-size: 30px;
 	font-family: Merriweather;
+	text-decoration: none;
+	color: white;
 	float: left;
 }
 
@@ -41,14 +44,16 @@ nav li {
 	list-style: none;
 	float: left;
 	line-height: 80px;
-	margin-right: 40px;
+	margin-right: 30px;
 
 }
 
-.upper {
+.upper a{
 	font-family: Oswald;
 	font-weight: bold;
 	text-transform: uppercase;
+	text-decoration: none;
+	color: white;
 }
 
 .twoheads {
@@ -60,29 +65,21 @@ nav li {
 	text-align: center;
 	padding: 20px 0px 20px 0px;
 	margin-top: 0;
-	margin-bottom: 500px;
-	border-bottom: 1px solid #3C3A3A;
-	box-shadow: 0px 0px 2px #2A303A;
+	margin-bottom: 415px;
+	box-shadow: 0px 1px 5px #666666;
 }
-
-/*.imageshow {
-	max-height: 500px;
-	overflow:hidden;
-}*/
 
 .floating_text {
 	background-color: white;
 	opacity: 0.8;
-	margin-left: 770px;
+	margin-left: 710px;
 	padding: 30px;
 	width: 38%;
 	z-index: 2;
-	top: 245px;
+	top: 215px;
 	position: absolute;
 	float: right;
-	border: 2px solid #D4E1DB;
-	box-shadow: 1px 1px 1px 1px #A3A3A3;
-	border-radius: 3px;
+	box-shadow: 0 0 5px #666666;
 }
 
 .floating_text h2 {
@@ -112,28 +109,26 @@ nav li {
 }
 
 section {
-margin: 0;
 background-color: white;
-padding-top: 30px;
-padding-bottom: 20px;
-margin-bottom: 0;
-box-shadow: 0 0 3px 0 #2A303A;
+box-shadow: 0px -1px 5px #666666;
 
 }
 section div {
 	float: left;
 	width: 33%;
-	padding-left: 40px;
-	padding-bottom: 30px;
+	padding: 0 0 19px 40px;
+	margin-top: 25px;
+	margin-bottom: 30px;
 }
 
-.vl {
+.div1 {
 	border-right: 1px solid #D4E1DB;
 }
 
 section div h2 {
 	font-size: 25px;
 	font-family: Merriweather;
+	margin-top: 26px;
 	margin-bottom: 4px;
 }
 
@@ -164,19 +159,126 @@ footer {
 	clear: both;
 	background-color: #3C3A3A;
 	height: 75px;
-	margin-top: 0;
+	margin: 0;
 }
 
 footer p {
 	font-size: 20px;
 	font-family: Source Sans Pro;
-	font-weight: 400;
+	/*font-weight: 400;*/
 	color: white;
 	line-height: 75px;
-	margin-left: 30px;
-	margin-top: 0;
+	margin: 0 0 0 30px;
 }
 
+/*designer css*/
 
+.dev_design_body {
+	background-color: #D4E1DB;
+	background-image: none;
+}
 
+section {
+	padding: 0;
+}
 
+.dev_design_img {
+	background-color: white;
+	width: 280px;
+	float: left;
+	display: inline-block;
+	margin: 20px 0px 20px 20px;
+	padding: 10px;
+	font-family: Source Sans Pro;
+	font-weight: 400;
+}
+
+.ux, .illust, .graphic {
+	font-family: Source Sans Pro;
+	font-weight: 400;
+	text-transform: none;
+	color: white;
+	background-color: #666666;
+	margin-right: 2px;
+	font-size:14px;
+	width: 40px;
+	height: 24px;
+	border-radius: 15px;
+	border: 0;
+	margin-bottom: 5px;
+}
+
+.illust {
+	width: 90px;
+}
+
+.graphic {
+	width: 115px;
+	margin-bottom: 15px;
+}
+
+.person_pic {
+	background-color: #CCCCCC;
+	width: 260px;
+	height: 260px;
+	text-align: center;
+	padding: 0;
+
+}
+
+.some_person {
+	width: 260px;
+	padding: 0;
+	margin-top: 8px;
+}
+
+.some_person p {
+	margin-bottom: 1px;
+	font-size: 20px;
+}
+
+.red_button_design {
+	color: white;
+	font-size: 15px;
+	font-family: Oswald;
+	text-align: center;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	background-color: #FF0121;
+	border-bottom: 4px solid #CE3237;
+	width: 260px;
+	height: 46px;
+}
+
+.person_pic p {
+	font-weight: 400;
+	font-size: 30px;
+	color: #949494;
+	margin-top: 113px;
+	margin-left: 10px;
+}
+
+/*developer css*/
+.html, .css, .js {
+	font-family: Source Sans Pro;
+	font-weight: 400;
+	text-transform: none;
+	color: white;
+	background-color: #666666;
+	margin-right: 2px;
+	font-size:14px;
+	width: 60px;
+	height: 24px;
+	border-radius: 11px;
+	border: 0;
+	margin-bottom: 5px;
+}
+
+.css {
+	width: 49px;
+}
+
+.js {
+	width: 37px;
+	margin-bottom: 15px;
+}
