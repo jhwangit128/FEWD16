@@ -14,7 +14,7 @@
  */
  	
  	$('#button1').click(function() {
- 		$('p').html('Jiha Hwang');
+ 		$('p').css("color", "blue");
  	});
 
 	// function question1(){
@@ -28,8 +28,8 @@
  * When button 1 is clicked, select all <h2> elements on this page, and change the text to say your name.
  */
 
- 	$('#button1').click(function() {
- 		$('h2').css("color")
+  $('#button1').click(function() {
+ 		$('h2').html('Jiha Hwang');
  	});
 
 	// function question2(){
@@ -45,9 +45,9 @@
  */
 
  	$('#button1').click(function() {
- 		$('#falseFact').html('True Fact');
+ 		$('.falseFact').html('True Fact');
  	});
- 	
+
 	// function replaceMe(){
 	// 	$("replaceMe").html("replaceMe");
 	// }
@@ -61,6 +61,9 @@
  * When button 2 is clicked, change the background color of the whole page to "pink"
  */
 
+ $('#button2').click(function() {
+ 	$('html').css("background-color", "pink");
+ });
 
 
 /**
@@ -68,6 +71,9 @@
  * When button 2 is clicked, change the color of all h2's to "green"
  */
 
+ $('#button2').click(function() {
+ 	$('h2').css("color", "green");
+ });
 
 
 /**
@@ -75,6 +81,9 @@
  * When button 2 is clicked, change the html content of all "blockquotes" to be "<span>no quote</span>"
  */
 
+ $('#button2').click(function() {
+ 	$('blockquote').html('<span>no quote</span>');
+ });
 
 //SECTION 3: This section is more difficult. Try your hand at the next 3 questions.
 
@@ -83,12 +92,24 @@
  * When button 3 is clicked, change the text in the header's h1 tag to read "jQuery Ninja"
  */
 
+ $('#button3').click(function() {
+ 	$('h1').html('jQuery Ninja');
+ });
 
 /**
  * Question 8:
  * Have the following code execute when button 3 is clicked. Write a JavaScript comment with a description of what happened. 
  * $(".city").attr("src", "http://lorempixel.com/g/500/400/food");
  */
+
+/* 
+  attr() method can either get or set the value of the given attribute. 
+ 	In this question, it's getting an image source from a certain website.
+ */
+
+ $('#button3').click(function() {
+ 	$(".city").attr("src", "http://lorempixel.com/g/500/400/food");
+ });
 
 
 /**
@@ -97,6 +118,9 @@
  * Bonus: Try to do this with only one jQuery call. $("selector").css({attribute: "value", attribute: "value"});
  */
 
+ $('#button3').click(function() {
+ 	$('p').css({"color": "blue", "font-family": "Georgia"});
+ });
 
 
 
