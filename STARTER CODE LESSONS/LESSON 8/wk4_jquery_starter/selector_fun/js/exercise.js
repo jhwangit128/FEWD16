@@ -13,8 +13,12 @@
  * We've started you off, replace the sec
  */
  	
- 	$('#button1').click(function() {
- 		$('p').css("color", "blue");
+ 	// $('#button1').click(function() {
+ 	// 	$('p').css('color', 'blue');
+ 	// });
+
+ 	$('#button1').on('click', function() {
+ 		$('p').css('color', 'blue');
  	});
 
 	// function question1(){
