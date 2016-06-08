@@ -28,6 +28,15 @@ function getCelsius (fahrenheit){
 	var finalResultCelsius = resultCelsius.toFixed(2);
 	$('#result').html(finalResultCelsius);
 	console.log(finalResultCelsius);
+
+		if (finalResultCelsius > 15) {
+    $("body").css('background-color', 'red');
+  } else if (finalResultCelsius < 50) {
+    $("body").css('background-color', 'blue');
+  } else {
+    $("body").css('background-color', 'green');
+  }
+  console.log('test');
 };
 
 
@@ -43,20 +52,27 @@ function getFahrenheit (celsius){
 	var resultFahrenheit = 1.8 * celsius + 32;
 	var finalResultFahrenheit = resultFahrenheit.toFixed(2);
 	$('#result').html(finalResultFahrenheit);
-	console.log(finalResultFahrenheit);
-};
-	
-function getBackgroundColor (){
-
-   if (finalResultCelsius > 15 && finalResultFahrenheit > 60) {
+	  if (finalResultFahrenheit > 60) {
     $("body").css('background-color', 'red');
-  } else if (finalResultCelsius < 50 && finalResultFahrenheit < 10) {
+  } else if (finalResultFahrenheit < 10) {
     $("body").css('background-color', 'blue');
   } else {
     $("body").css('background-color', 'green');
   }
+	console.log(finalResultFahrenheit);
 };
 
+
+// function getBackgroundColor (){
+
+//    if (finalResultCelsius > 15 && finalResultFahrenheit > 60) {
+//     $("body").css('background-color', 'red');
+//   } else if (finalResultCelsius < 50 && finalResultFahrenheit < 10) {
+//     $("body").css('background-color', 'blue');
+//   } else {
+//     $("body").css('background-color', 'green');
+//   }
+// };
 
 
 
