@@ -17,7 +17,7 @@
 $('#fahrenheit_to_celsius').on('click', function() {
 	var fahrenheit = $('#temperature').val();
 	getCelsius(fahrenheit);
-	getBackgroundColor();
+	// getBackgroundColor();
 	console.log('test');
 });	
 
