@@ -2,15 +2,18 @@ $('article').hide();
 $('#home').show();
 
 $('li').on('click', function() {
-$(this).show('current_panel');
-$(this).removeClass();
+	
 
+		$("li").removeClass("active");
+		$(this).addClass("active");
+		$("article").hide();
+		var content_show = $(this).attr("data-panel");
+		$(content_show).show();
+		// $($(this).attr("data-panel")).show;
+	
+	// 
 
-
-
-
-
-
+});
 
 
 

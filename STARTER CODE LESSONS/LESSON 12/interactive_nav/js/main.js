@@ -1,7 +1,15 @@
-$('nav li').on('click', function() {
+
+
+$('nav li a').on('click', function(){
+
+
+	$(this).addClass('active');
+	// $(this).find('panel').slideDown();
+	$('section').slideDown(500);
   $('#slide-down').slideDown(500);
-  $('#women').show();
-  });
-// $('nav li').on('click', function() {
-// 	$('#slide-down').slideUp(100);
-// });
+  $(this).find('panel').slideDown();
+  // $(this).removeClass('active');
+
+});
+
+	
