@@ -1,5 +1,3 @@
-
-
 $('nav li a').on('click', function(){
 
 
@@ -7,7 +5,9 @@ $('nav li a').on('click', function(){
 	// $(this).find('panel').slideDown();
 	$('section').slideDown(500);
   $('#slide-down').slideDown(500);
-  $(this).find('panel').slideDown();
+  var anotherNav = $(this).attr("href");
+  $(content_show).show();
+  // $(this).find('panel').slideDown();
   // $(this).removeClass('active');
 
 });

@@ -1,0 +1,149 @@
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Lato', Calibri, Arial, sans-serif;
+  color: #555;
+  background-color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 2em;
+}
+
+h2 {
+  color: #373F51;
+  margin-top: 93px;
+  margin-left: 20px;
+}
+
+h1 {
+  margin: 2.5em 0 1em;
+}
+
+/*@keyframes sidebar{
+  0%{
+    transform:translateX(-500px);
+  }
+  100%{
+    transform:translateX(0px);
+  }
+}*/
+
+@keyframes hamburger1{
+  0%{
+    transform:rotate(0deg);
+  }
+  100%{
+    transform:rotate(45deg);
+  }
+}
+
+@keyframes hamburger2{
+  0%{
+    transform:rotate(0deg);
+  }
+  100%{
+    transform:rotate(-45deg);
+  }
+}
+
+ul {
+  list-style-type: none;
+  margin-top: 32px;
+}
+
+a {
+  color: #D8DBE2;
+}
+
+a,h2 {
+  text-decoration: none;
+  margin-left:-250px;
+  transition: margin 2s;
+}
+
+.content {
+  margin-left:0px;
+  transition: margin 2s;
+}
+
+.show {width:250px !important; }
+.moveRight {margin-left:29px; }
+.contentMoveRight {margin-left:250px; }
+
+.sidebar {  
+  height: 100%;
+  width: 0px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #1B1B1E;
+  padding-top: 60px;
+  /*animation: sidebar 1s ease;*/
+  overflow:hidden;
+  transition: width 2s;
+}
+
+/*.active .sidebar {
+  animation: sidebar 1s ease;
+}*/
+
+.hamburger {
+  margin-left: 0;
+  width: 2.5rem;
+  display: block;
+
+}
+
+.line {
+  position: relative;
+  width: 2.5rem;
+  height: .3125rem;
+  background: #58A4B0;
+  transition: 0.5s;
+  border-radius: 2.5rem;
+  margin-bottom: .52em;
+  opacity: 1;
+  /* 1. Set the transition property on the .line class */
+/*  transition: all ease;*/
+}
+
+/* Second line */
+.active .line:nth-child(2) {
+  /* 2. When the active class is added to the .hamburger-icon, fade the middle line out (hint: you can use the 'opacity' property). */
+  opacity: 0;
+}
+
+/* Top line */
+.active .line:first-child {
+  animation: humburger1 2s ease;
+  /* 3. When the active class is added to the .hamburger-icon, use the css 'transform' property to rotate the first line 45 deg*/
+  transform: rotate(45deg);
+  /* 4. Use the CSS 'transform-origin' property to set the center of rotation.*/
+  transform-origin: 0 0;
+}
+
+/* Bottom line */
+.active .line:last-child {
+  animation: hamburger2 2s ease;
+  /* 5. When the active class is added to the .hamburger-icon, use the css 'transform' property to rotate the first line -45 deg*/
+  transform: rotate(-45deg);
+  /* 6. Use the CSS 'transform-origin' property to set the center of rotation.*/
+  transform-origin: 0 5px;
+}
+
+
+
